@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Kotak from "../assets/kotak.png";
 import Button from "react-bootstrap/Button";
@@ -39,6 +39,10 @@ const Landing = () => {
 	const handleError = (err) => {
 		console.error(err);
 	};
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<Container>

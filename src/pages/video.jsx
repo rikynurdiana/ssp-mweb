@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import YouTube from "react-youtube";
 import Container from "react-bootstrap/Container";
 
@@ -15,6 +16,10 @@ const Video = () => {
 		// access to player in all event handlers via event.target
 		event.target.pauseVideo();
 	};
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<>

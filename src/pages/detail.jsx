@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Tambakudang from "../assets/tambakudang.png";
 import Col from "react-bootstrap/Col";
@@ -21,6 +22,10 @@ const Detail = () => {
 			pathname: `/maps`,
 		});
 	};
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<Container>

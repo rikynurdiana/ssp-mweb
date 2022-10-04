@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { useNavigate } from "react-router-dom";
@@ -18,6 +19,10 @@ const Maps = () => {
 			pathname: `/maps`,
 		});
 	};
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<div className="maps-section-content">
