@@ -76,7 +76,9 @@ const Landing = () => {
 									delay={1000}
 									onError={handleError}
 									onResult={(result) => handleScan(result)}
-									chooseDeviceId={"environment"}
+									constraints={{
+										facingMode: "environment",
+									}}
 									// style={{ width: "300px" }}
 								/>
 							</>
