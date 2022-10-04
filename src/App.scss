@@ -1,12 +1,26 @@
 .section-content {
 	text-align: center;
+	margin-top: 100px;
 
 	.image-content {
 		margin-bottom: 20px;
+		margin-top: 20px;
+		border: 5px solid #dddddd;
+		border-radius: 50%;
+		box-shadow: 5px 5px 10px #dddddd;
+		background-image: url("./assets/tambakudang.png");
 	}
 
 	.title-content {
 		margin-bottom: 20px;
+		h1 {
+			font-size: 50px;
+			color: #00bee0;
+		}
+		h2 {
+			font-size: 30px;
+			color: #091469;
+		}
 	}
 
 	.description-content {
@@ -14,19 +28,27 @@
 	}
 
 	.button-content {
-		background-color: #00bee0;
-		width: 50px;
-		height: 50px;
+		background-color: #a9e7f1;
+		width: 80px;
+		height: 80px;
 		border-radius: 50px;
-		padding-top: 11px;
+		padding-top: 10px;
 		margin-left: auto;
 		margin-right: auto;
 		cursor: pointer;
+		margin-bottom: 100px;
+		border: 5px solid #dddddd;
+	}
+
+	.button-content:hover {
+		box-shadow: 6px 8px 10px #888888;
+		transition: 0.5s;
 	}
 }
 
 .detail-section-content {
 	text-align: center;
+	margin-top: 100px;
 
 	.image-content {
 		margin-bottom: 20px;
@@ -46,25 +68,36 @@
 		margin-bottom: 20px;
 	}
 
-	.button-content {
-		background-color: #00bee0;
-		width: 50px;
-		height: 50px;
-		border-radius: 50px;
-		padding-top: 11px;
-		margin-left: auto;
-		margin-right: auto;
-		cursor: pointer;
-	}
-
 	.two-side {
 		text-align: left;
-		margin-bottom: 20px;
+		margin-bottom: 50px;
+		margin-top: 50px;
+
+		.img-wrapper {
+			img {
+				margin-top: 70px;
+			}
+		}
+
+		.section {
+			.title {
+				color: #00bee0;
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+			.desc {
+				color: 091469;
+				font-size: 14px;
+				font-weight: bold;
+			}
+		}
 	}
 
 	.line-bar {
 		text-align: left;
-		margin-bottom: 20px;
+		margin-bottom: 80px;
+		margin-left: 10px;
 		ul {
 			list-style: none;
 			margin: 0;
@@ -101,17 +134,62 @@
 				}
 			}
 		}
+
+		.title {
+			color: #00bee0;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.location {
+			color: #091469;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.location-detail {
+			color: #091469;
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+
+		.sub-title {
+			color: #091469;
+			font-size: 14px;
+		}
+
+		.date {
+			color: #091469;
+			font-size: 18px;
+		}
 	}
 }
 
 .video-section-content {
 	text-align: center;
+	margin-top: 50px;
+
+	.title-content {
+		margin-bottom: 20px;
+		margin-top: 40px;
+		h1 {
+			font-size: 50px;
+			color: #00bee0;
+		}
+		h2 {
+			font-size: 30px;
+			color: #091469;
+		}
+	}
 }
 
 .maps-section-content {
+	margin-top: 100px;
 	.line-bar {
 		text-align: left;
-		margin-bottom: 20px;
+		margin-bottom: 80px;
+		margin-left: 10px;
+		margin-top: 50px;
 		ul {
 			list-style: none;
 			margin: 0;
@@ -147,6 +225,34 @@
 					margin-left: 15px;
 				}
 			}
+		}
+
+		.title {
+			color: #00bee0;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.location {
+			color: #091469;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.location-detail {
+			color: #091469;
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+
+		.sub-title {
+			color: #091469;
+			font-size: 14px;
+		}
+
+		.date {
+			color: #091469;
+			font-size: 18px;
 		}
 	}
 }

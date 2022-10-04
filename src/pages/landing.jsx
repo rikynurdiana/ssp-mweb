@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Kotak from "../assets/kotak.png";
-import { Search } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { QrReader } from "react-qr-reader";
 import { useNavigate } from "react-router-dom";
+import Search from "../assets/search.png";
 import "../App.scss";
 
 const Landing = () => {
@@ -48,7 +48,7 @@ const Landing = () => {
 				</div>
 				<div className="title-content">
 					<h1>Hello,</h1>
-					<h3>your shrimp is ready to tell its great story.</h3>
+					<h2>your shrimp is ready to tell its great story.</h2>
 				</div>
 				<div className="description-content">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -63,7 +63,7 @@ const Landing = () => {
 					quia.
 				</div>
 				<div className="button-content" onClick={handleShow}>
-					<Search />
+					<img src={Search} alt="search" width={50} />
 				</div>
 				<Modal show={show} onHide={handleClose} centered>
 					<Modal.Header closeButton>

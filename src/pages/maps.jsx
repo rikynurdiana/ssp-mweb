@@ -12,6 +12,13 @@ const Maps = () => {
 		});
 	};
 
+	const handleClickToMaps = () => {
+		console.log("ke maps");
+		navigate({
+			pathname: `/maps`,
+		});
+	};
+
 	return (
 		<div className="maps-section-content">
 			<iframe
@@ -25,24 +32,37 @@ const Maps = () => {
 			<Container>
 				<div className="line-bar">
 					<ul>
-						<li>
-							<div>Your Shrimp was born at</div>
-							<div>LAB_MAR_BRAVO</div>
-							<div>Salinas Ecuador</div>
-							<div>it was moved to the farm on</div>
-							<div>Jan - 05 -2020</div>
+						<li onClick={handleClickToMaps}>
+							<div className="title">Your Shrimp was born at</div>
+							<div className="location">LAB_MAR_BRAVO</div>
+							<div className="location-detail">
+								Salinas Ecuador
+							</div>
+							<div className="sub-title">
+								it was moved to the farm on
+							</div>
+							<div className="date">Jan - 05 -2020</div>
 						</li>
 						<li onClick={handleClickToVideo}>
-							<div>The farm where it was raised is</div>
-							<div>CAMARONERA CACHUGRAN</div>
+							<div className="title">
+								The farm where it was raised is
+							</div>
+							<div className="location">CAMARONERA CACHUGRAN</div>
 							<div>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Maxime mollitia, molestiae
 								quas vel sint commodi repudiandae consequuntur
 								voluptatum
 							</div>
-							<div>The farm is located in</div>
-							<div>ISLA CHUPADORES GRANDE Ecuador</div>
+							<div
+								className="location"
+								style={{ marginTop: "10px" }}
+							>
+								The farm is located in
+							</div>
+							<div className="date">
+								ISLA CHUPADORES GRANDE Ecuador
+							</div>
 						</li>
 					</ul>
 				</div>

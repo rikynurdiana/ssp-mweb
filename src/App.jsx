@@ -24,7 +24,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<Navbar bg="light" expand="lg">
+			<Navbar bg="light" expand="lg" fixed="top">
 				<Container>
 					<Navbar.Brand href="/">
 						<img src={LogoEfishery} alt="logo" width="50px" />

@@ -18,7 +18,9 @@ const Video = () => {
 
 	return (
 		<>
-			<YouTube videoId="dvoNwa3369I" opts={opts} onReady={_onReady} />
+			<div style={{ marginTop: "100px" }}>
+				<YouTube videoId="dvoNwa3369I" opts={opts} onReady={_onReady} />
+			</div>
 
 			<Container>
 				<div className="video-section-content">
