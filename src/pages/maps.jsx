@@ -65,7 +65,7 @@ const Maps = () => {
 							>
 								The farm is located in
 							</div>
-							<div className="date">
+							<div className="loc">
 								ISLA CHUPADORES GRANDE Ecuador
 							</div>
 						</li>

@@ -30,8 +30,8 @@ const Video = () => {
 			<Container>
 				<div className="video-section-content">
 					<div className="title-content">
-						<h1>Hello,</h1>
-						<h3>your shrimp is ready to tell its great story.</h3>
+						<h1>Camaronera Cachugran,</h1>
+						<h3>Taking steps into the future.</h3>
 					</div>
 					<div className="description-content">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.

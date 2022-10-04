@@ -34,8 +34,8 @@ const Detail = () => {
 					<img src={Tambakudang} alt="kotak" width="100%" />
 				</div>
 				<div className="title-content">
-					<h1>Hello,</h1>
-					<h3>your shrimp is ready to tell its great story.</h3>
+					<h1>This is Where your,</h1>
+					<h2>shrimp started its journey</h2>
 				</div>
 				<div className="description-content">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -116,7 +116,7 @@ const Detail = () => {
 								>
 									The farm is located in
 								</div>
-								<div className="date">
+								<div className="loc">
 									ISLA CHUPADORES GRANDE Ecuador
 								</div>
 							</li>
