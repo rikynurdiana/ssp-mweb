@@ -1,0 +1,91 @@
+import { useState } from "react";
+import Container from "react-bootstrap/Container";
+import Kotak from "../assets/kotak.png";
+import { Search } from "react-bootstrap-icons";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import { QrReader } from "react-qr-reader";
+import "../App.scss";
+
+const Landing = () => {
+	const [show, setShow] = useState(false);
+
+	const [startScan, setStartScan] = useState(false);
+	const [data, setData] = useState("");
+
+	const handleClose = () => {
+		setShow(false);
+		setStartScan(false);
+	};
+	const handleShow = () => {
+		setShow(true);
+		setStartScan(true);
+	};
+
+	const handleScan = async (result) => {
+		console.log(`loaded data data`, result);
+		if (result !== undefined) {
+			console.log(`loaded >>>`, result);
+			setData(result.text);
+			setStartScan(false);
+			window.location.href = "http://127.0.0.1:5173/detail";
+		}
+	};
+	const handleError = (err) => {
+		console.error(err);
+	};
+
+	return (
+		<Container>
+			<div className="section-content">
+				<div className="image-content">
+					<img src={Kotak} alt="kotak" width="100%" />
+				</div>
+				<div className="title-content">
+					<h1>Hello,</h1>
+					<h3>your shrimp is ready to tell its great story.</h3>
+				</div>
+				<div className="description-content">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Maxime mollitia, molestiae quas vel sint commodi repudiandae
+					consequuntur voluptatum laborum numquam blanditiis harum
+					quisquam eius sed odit fugiat iusto fuga praesentium optio,
+					eaque rerum! Provident similique accusantium nemo autem.
+					Veritatis obcaecati tenetur iure eius earum ut molestias
+					architecto voluptate aliquam nihil, eveniet aliquid culpa
+					officia aut! Impedit sit sunt quaerat, odit, tenetur error,
+					harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+					quia.
+				</div>
+				<div className="button-content" onClick={handleShow}>
+					<Search />
+				</div>
+				<Modal show={show} onHide={handleClose} centered>
+					<Modal.Header closeButton>
+						<Modal.Title>QR Reader</Modal.Title>
+					</Modal.Header>
+					<Modal.Body>
+						{startScan && (
+							<>
+								<QrReader
+									delay={1000}
+									onError={handleError}
+									onResult={(result) => handleScan(result)}
+									// style={{ width: "300px" }}
+								/>
+							</>
+						)}
+						{data !== "" && <p>{data}</p>}
+					</Modal.Body>
+					<Modal.Footer>
+						<Button variant="secondary" onClick={handleClose}>
+							Close
+						</Button>
+					</Modal.Footer>
+				</Modal>
+			</div>
+		</Container>
+	);
+};
+
+export default Landing;
