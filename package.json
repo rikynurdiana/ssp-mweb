@@ -10,13 +10,17 @@
 		"release": "standard-version"
 	},
 	"dependencies": {
+		"@react-google-maps/api": "^2.13.1",
 		"bootstrap": "^5.2.2",
 		"react": "^18.2.0",
 		"react-bootstrap": "^2.5.0",
 		"react-bootstrap-icons": "^1.9.1",
 		"react-dom": "^18.2.0",
+		"react-google-maps": "^9.4.5",
 		"react-qr-reader": "^3.0.0-beta-1",
 		"react-router-dom": "^6.4.1",
+		"react-youtube": "^10.0.0",
+		"recompose": "^0.30.0",
 		"sass": "^1.55.0",
 		"standard-version": "^9.5.0"
 	},

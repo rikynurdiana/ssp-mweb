@@ -26,14 +26,13 @@ function App() {
 		<div className="App">
 			<Navbar bg="light" expand="lg">
 				<Container>
-					<Navbar.Brand href="#home">
+					<Navbar.Brand href="/">
 						<img src={LogoEfishery} alt="logo" width="50px" />
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">
-							<Nav.Link href="#home">Menu 1</Nav.Link>
-							<Nav.Link href="#link">Menu 2</Nav.Link>
+							<Nav.Link href="/detail">Detail</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
