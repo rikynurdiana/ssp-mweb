@@ -5,9 +5,11 @@ import { Search } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { QrReader } from "react-qr-reader";
+import { useNavigate } from "react-router-dom";
 import "../App.scss";
 
 const Landing = () => {
+	const navigate = useNavigate();
 	const [show, setShow] = useState(false);
 
 	const [startScan, setStartScan] = useState(false);
@@ -28,7 +30,10 @@ const Landing = () => {
 			console.log(`loaded >>>`, result);
 			setData(result.text);
 			setStartScan(false);
-			window.location.href = "http://127.0.0.1:5173/detail";
+			navigate({
+				pathname: `/detail`,
+			});
+			location.reload();
 		}
 	};
 	const handleError = (err) => {
