@@ -1,12 +1,14 @@
 import { useEffect } from "react";
+
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
+import DataLine from "./components/dataLine";
+
 import ImagesRound from "../assets/efish/images-round.png";
 import EfreshImg from "../assets/efish/eFresh.png";
 import ShrimpImg from "../assets/efish/udang.png";
-import DataLine from "./components/dataLine";
 
 const Detail = () => {
 	useEffect(() => {

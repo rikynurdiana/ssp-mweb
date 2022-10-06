@@ -1,6 +1,5 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
 import { useNavigate } from "react-router-dom";
+import Container from "react-bootstrap/Container";
 import "./styles.scss";
 
 const DataLine = () => {

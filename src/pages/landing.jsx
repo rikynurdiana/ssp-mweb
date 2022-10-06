@@ -1,23 +1,23 @@
 import { useState, useEffect } from "react";
-import Container from "react-bootstrap/Container";
-import Modal from "react-bootstrap/Modal";
 import { QrReader } from "react-qr-reader";
 import { useNavigate } from "react-router-dom";
+
+import Container from "react-bootstrap/Container";
+import Modal from "react-bootstrap/Modal";
+
 import PackingImg from "../assets/efish/packing-images.png";
 import ScanBtn from "../assets/efish/scan-button.png";
-import "../App.scss";
 
 const Landing = () => {
 	const navigate = useNavigate();
 	const [show, setShow] = useState(false);
-
 	const [startScan, setStartScan] = useState(false);
-	const [data, setData] = useState("");
 
 	const handleClose = () => {
 		setShow(false);
 		setStartScan(false);
 	};
+
 	const handleShow = () => {
 		setShow(true);
 		setStartScan(true);
@@ -25,14 +25,14 @@ const Landing = () => {
 
 	const handleScan = async (result) => {
 		if (result !== undefined) {
-			setData(result.text);
 			setStartScan(false);
 			navigate({
 				pathname: `/detail`,
 			});
-			location.reload();
+			location.reload(); // di refresh supaya scanner nya mati
 		}
 	};
+
 	const handleError = (err) => {
 		console.error(err);
 	};
@@ -63,9 +63,6 @@ const Landing = () => {
 					<img src={ScanBtn} alt="search" />
 				</div>
 				<Modal show={show} onHide={handleClose} centered>
-					{/* <Modal.Header closeButton>
-						<Modal.Title>QR Scanner</Modal.Title>
-					</Modal.Header> */}
 					<Modal.Body>
 						{startScan && (
 							<>
@@ -84,7 +81,6 @@ const Landing = () => {
 								/>
 							</>
 						)}
-						{data !== "" && <p>{data}</p>}
 					</Modal.Body>
 				</Modal>
 			</div>

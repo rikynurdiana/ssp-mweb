@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import EfreshImg from "../assets/efish/eFresh.png";
-import FarmImage from "../assets/efish/images.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
+import EfreshImg from "../assets/efish/eFresh.png";
+import FarmImage from "../assets/efish/images.png";
 
 const Farms = () => {
 	useEffect(() => {
