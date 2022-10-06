@@ -5,6 +5,18 @@
 	.image-content {
 		margin-bottom: 20px;
 		margin-top: 20px;
+		position: relative;
+
+		.bg-package {
+			width: 60%;
+		}
+
+		.box-package {
+			position: absolute;
+			left: 25px;
+			top: 10px;
+			width: 85%;
+		}
 	}
 
 	.title-content {

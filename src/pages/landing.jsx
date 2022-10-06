@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Modal from "react-bootstrap/Modal";
 
-import PackingImg from "../assets/efish/packing-images.png";
+import PackingImg from "../assets/efish/packaging-bg.png";
+import BoxPacket from "../assets/efish/eFresh-Shrimp-Packaging.png";
 import ScanBtn from "../assets/efish/scan-button.png";
 
 const Landing = () => {
@@ -45,7 +46,16 @@ const Landing = () => {
 		<Container>
 			<div className="section-content">
 				<div className="image-content">
-					<img src={PackingImg} alt="packing-images" width="80%" />
+					<img
+						src={PackingImg}
+						alt="packing-images"
+						className="bg-package"
+					/>
+					<img
+						src={BoxPacket}
+						alt="package"
+						className="box-package"
+					/>
 				</div>
 				<div className="title-content">
 					<h1>It's not just a shrimp.</h1>
