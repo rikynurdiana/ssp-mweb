@@ -3,7 +3,8 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import LogoEfishery from "../../assets/logo-efish.png";
 import { useNavigate } from "react-router-dom";
-import { HouseDoor } from "react-bootstrap-icons";
+// import { HouseDoor } from "react-bootstrap-icons";
+import HomeIcon from "../../assets/efish/House-Outline.png";
 import "./styles.scss";
 
 const Navigation = () => {
@@ -24,7 +25,8 @@ const Navigation = () => {
 					aria-controls="basic-navbar-nav"
 					onClick={() => handleBackToHome()}
 				>
-					<HouseDoor color="#b3b3b3" size={40} />
+					{/* <HouseDoor color="#b3b3b3" size={40} /> */}
+					<img src={HomeIcon} alt="house" width={40} />
 				</Navbar.Toggle>
 			</Container>
 		</Navbar>
