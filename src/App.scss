@@ -5,17 +5,17 @@
 	.image-content {
 		margin-bottom: 20px;
 		margin-top: 20px;
-		border: 5px solid #dddddd;
-		border-radius: 50%;
-		box-shadow: 5px 5px 10px #dddddd;
-		background-image: url("./assets/tambakudang.png");
 	}
 
 	.title-content {
 		margin-bottom: 20px;
 		h1 {
-			font-size: 50px;
-			color: #00bee0;
+			color: #1d1d1d;
+			font-size: 36px;
+			font-weight: 700;
+			span {
+				color: #4cc7a0;
+			}
 		}
 		h2 {
 			font-size: 30px;
@@ -23,26 +23,34 @@
 		}
 	}
 
+	.line {
+		border-bottom: 3px solid #ffd200;
+		width: 59px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 16px;
+	}
+
 	.description-content {
 		margin-bottom: 20px;
+		padding-left: 34px;
+		padding-right: 34px;
+		font-size: 12px;
+		font-weight: 400;
 	}
 
 	.button-content {
-		background-color: #a9e7f1;
 		width: 80px;
 		height: 80px;
-		border-radius: 50px;
-		padding-top: 10px;
 		margin-left: auto;
 		margin-right: auto;
 		cursor: pointer;
-		margin-bottom: 100px;
-		border: 5px solid #dddddd;
 	}
 
-	.button-content:hover {
-		box-shadow: 6px 8px 10px #888888;
-		transition: 0.5s;
+	.title-modal {
+		color: #4a4a4a;
+		font-size: 14px;
+		font-weight: 400;
 	}
 }
 
@@ -54,17 +62,19 @@
 		margin-bottom: 20px;
 		img {
 			border-radius: 50%;
-			height: 300px;
-			width: 300px;
-			border: 5px solid #dddddd;
+			height: 243px;
+			width: 243px;
+			border: 2px solid #ffd200;
+			padding: 5px;
 		}
 	}
 
 	.title-content {
 		margin-bottom: 20px;
 		h1 {
-			font-size: 30px;
-			color: #00bee0;
+			color: #1d1d1d;
+			font-size: 24px;
+			font-weight: 700;
 		}
 		h2 {
 			font-size: 26px;
@@ -74,282 +84,194 @@
 
 	.description-content {
 		margin-bottom: 20px;
+		margin-bottom: 20px;
+		padding-left: 34px;
+		padding-right: 34px;
+		font-size: 12px;
+		font-weight: 400;
+		color: #4a4a4a;
+	}
+
+	.efresh-image {
+		width: 106px;
+		height: 39px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 35px;
+	}
+
+	.line {
+		border-bottom: 2px solid #ffd200;
+		width: 59px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 16px;
 	}
 
 	.two-side {
 		text-align: left;
 		margin-bottom: 50px;
-		margin-top: 50px;
+		margin-top: 20px;
 
 		.img-wrapper {
 			img {
-				margin-top: 70px;
+				margin-top: 0px;
 			}
 		}
 
 		.section {
+			margin-bottom: 13px;
 			.title {
-				color: #00bee0;
-				font-size: 16px;
-				font-weight: bold;
+				color: #389477;
+				font-size: 10px;
+				font-weight: 700;
 			}
 
 			.desc {
-				color: 091469;
-				font-size: 14px;
-				font-weight: bold;
+				color: #4a4a4a;
+				font-size: 10px;
+				font-weight: 700;
 			}
-		}
-	}
-
-	.line-bar {
-		text-align: left;
-		margin-bottom: 80px;
-		margin-left: 10px;
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			position: relative;
-			&:before {
-				content: "";
-				display: inline-block;
-				width: 2px;
-				background: #00bee0;
-				position: absolute;
-				left: 6px;
-				top: 5px;
-				height: calc(100% - 10px);
-			}
-			li {
-				position: relative;
-				padding-left: 15px;
-				margin-bottom: 15px;
-				&:before {
-					content: "";
-					display: inline-block;
-					width: 14px;
-					height: 14px;
-					background: #00bee0;
-					position: absolute;
-					left: 0;
-					top: 5px;
-					border-radius: 10px;
-				}
-
-				div {
-					margin-left: 15px;
-				}
-			}
-		}
-
-		.title {
-			color: #00bee0;
-			font-size: 16px;
-			font-weight: bold;
-		}
-
-		.location {
-			color: #091469;
-			font-size: 14px;
-			font-weight: bold;
-		}
-
-		.location-detail {
-			color: #091469;
-			font-size: 14px;
-			margin-bottom: 10px;
-		}
-
-		.sub-title {
-			color: #091469;
-			font-size: 14px;
-		}
-
-		.date {
-			color: #091469;
-			font-size: 18px;
-		}
-
-		.loc {
-			color: #091469;
-			font-size: 15px;
 		}
 	}
 }
 
-.video-section-content {
-	text-align: center;
-	margin-bottom: 100px;
+.video-wrapper {
+	margin-top: 100px;
 
-	.title-content {
-		margin-bottom: 20px;
-		margin-top: 40px;
-		h1 {
-			font-size: 30px;
-			color: #00bee0;
-		}
-		h2 {
-			font-size: 30px;
-			color: #091469;
-		}
+	.efresh-image {
+		width: 106px;
+		height: 39px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.description-content {
-		margin-bottom: 40px;
+	.line {
+		border-bottom: 3px solid #ffd200;
+		width: 59px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 16px;
 	}
 
-	.line-bar {
-		text-align: left;
-		margin-bottom: 80px;
-		margin-left: 10px;
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			position: relative;
-			&:before {
-				content: "";
-				display: inline-block;
-				width: 2px;
-				background: #00bee0;
-				position: absolute;
-				left: 6px;
-				top: 5px;
-				height: calc(100% - 10px);
+	.video-section-content {
+		text-align: center;
+		margin-bottom: 100px;
+
+		.title-content {
+			margin-bottom: 20px;
+			margin-top: 20px;
+			h1 {
+				font-size: 24px;
+				font-weight: 700;
+				color: #4cc7a0;
 			}
-			li {
-				position: relative;
-				padding-left: 15px;
-				margin-bottom: 15px;
-				&:before {
-					content: "";
-					display: inline-block;
-					width: 14px;
-					height: 14px;
-					background: #00bee0;
-					position: absolute;
-					left: 0;
-					top: 5px;
-					border-radius: 10px;
-				}
-
-				div {
-					margin-left: 15px;
-				}
+			h3 {
+				font-size: 16px;
+				font-weight: 700;
+				color: #1d1d1d;
+				padding-left: 58px;
+				padding-right: 58px;
 			}
 		}
 
-		.title {
-			color: #00bee0;
-			font-size: 16px;
-			font-weight: bold;
-		}
-
-		.location {
-			color: #091469;
-			font-size: 14px;
-			font-weight: bold;
-		}
-
-		.location-detail {
-			color: #091469;
-			font-size: 14px;
-			margin-bottom: 10px;
-		}
-
-		.sub-title {
-			color: #091469;
-			font-size: 14px;
-		}
-
-		.date {
-			color: #091469;
-			font-size: 18px;
-		}
-
-		.loc {
-			color: #091469;
-			font-size: 15px;
+		.description-content {
+			margin-bottom: 40px;
+			font-size: 12px;
+			font-weight: 400;
+			padding-left: 25px;
+			padding-right: 25px;
 		}
 	}
 }
 
 .maps-section-content {
 	margin-top: 100px;
-	.line-bar {
-		text-align: left;
-		margin-bottom: 80px;
-		margin-left: 10px;
-		margin-top: 50px;
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			position: relative;
-			&:before {
-				content: "";
-				display: inline-block;
-				width: 2px;
-				background: #00bee0;
-				position: absolute;
-				left: 6px;
-				top: 5px;
-				height: calc(100% - 10px);
-			}
-			li {
-				position: relative;
-				padding-left: 15px;
-				margin-bottom: 15px;
-				&:before {
-					content: "";
-					display: inline-block;
-					width: 14px;
-					height: 14px;
-					background: #00bee0;
-					position: absolute;
-					left: 0;
-					top: 5px;
-					border-radius: 10px;
-				}
+}
 
-				div {
-					margin-left: 15px;
-				}
-			}
+.farm-section-content {
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+	.efresh-image {
+		width: 106px;
+		height: 39px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.line {
+		border-bottom: 3px solid #ffd200;
+		width: 59px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 16px;
+	}
+
+	.line-left {
+		border-bottom: 3px solid #ffd200;
+		width: 59px;
+		margin-bottom: 16px;
+		margin-left: 40px;
+		margin-top: -8px;
+	}
+
+	.title-content {
+		margin-bottom: 20px;
+		margin-top: 20px;
+		padding-left: 40px;
+		padding-right: 40px;
+		h1 {
+			font-size: 24px;
+			font-weight: 700;
+			color: #4cc7a0;
 		}
+		h3 {
+			font-size: 12px;
+			font-weight: 400;
+			color: #252525;
+			margin-top: -8px;
+		}
+	}
 
+	.farm-content {
 		.title {
-			color: #00bee0;
-			font-size: 16px;
-			font-weight: bold;
+			font-size: 12px;
+			font-weight: 700;
+			color: #389477;
 		}
 
-		.location {
-			color: #091469;
+		.description {
+			font-size: 10px;
+			font-weight: 400;
+			color: #4a4a4a;
+		}
+	}
+}
+
+.locations-section-content {
+	margin-top: 100px;
+	padding-left: 10px;
+	position: relative;
+
+	.text {
+		position: absolute;
+		padding-left: 30px;
+		.title {
+			color: #4a4a4a;
+			font-size: 24px;
+			font-weight: 700;
+		}
+
+		.description {
+			color: #4a4a4a;
 			font-size: 14px;
-			font-weight: bold;
+			font-weight: 700;
 		}
+	}
 
-		.location-detail {
-			color: #091469;
-			font-size: 14px;
-			margin-bottom: 10px;
-		}
-
-		.sub-title {
-			color: #091469;
-			font-size: 14px;
-		}
-
-		.date {
-			color: #091469;
-			font-size: 18px;
-		}
-
-		.loc {
-			color: #091469;
-			font-size: 15px;
-		}
+	.images {
+		padding-top: 30px;
+		padding-left: 30px;
 	}
 }

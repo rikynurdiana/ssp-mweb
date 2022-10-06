@@ -1,25 +1,8 @@
 import { useEffect } from "react";
 import React from "react";
-import Container from "react-bootstrap/Container";
-import { useNavigate } from "react-router-dom";
+import DataLine from "./components/dataLine";
 
 const Maps = () => {
-	const navigate = useNavigate();
-
-	const handleClickToVideo = () => {
-		console.log("ke video");
-		navigate({
-			pathname: `/video`,
-		});
-	};
-
-	const handleClickToMaps = () => {
-		console.log("ke maps");
-		navigate({
-			pathname: `/maps`,
-		});
-	};
-
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -34,44 +17,9 @@ const Maps = () => {
 				loading="lazy"
 				referrerPolicy="no-referrer-when-downgrade"
 			></iframe>
-			<Container>
-				<div className="line-bar">
-					<ul>
-						<li onClick={handleClickToMaps}>
-							<div className="title">Your Shrimp was born at</div>
-							<div className="location">LAB_MAR_BRAVO</div>
-							<div className="location-detail">
-								Salinas Ecuador
-							</div>
-							<div className="sub-title">
-								it was moved to the farm on
-							</div>
-							<div className="date">Jan - 05 -2020</div>
-						</li>
-						<li onClick={handleClickToVideo}>
-							<div className="title">
-								The farm where it was raised is
-							</div>
-							<div className="location">CAMARONERA CACHUGRAN</div>
-							<div>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Maxime mollitia, molestiae
-								quas vel sint commodi repudiandae consequuntur
-								voluptatum
-							</div>
-							<div
-								className="location"
-								style={{ marginTop: "10px" }}
-							>
-								The farm is located in
-							</div>
-							<div className="loc">
-								ISLA CHUPADORES GRANDE Ecuador
-							</div>
-						</li>
-					</ul>
-				</div>
-			</Container>
+			<div style={{ marginTop: "20px" }}>
+				<DataLine />
+			</div>
 		</div>
 	);
 };

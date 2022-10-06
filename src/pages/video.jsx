@@ -1,19 +1,18 @@
 import { useEffect } from "react";
 import YouTube from "react-youtube";
 import Container from "react-bootstrap/Container";
+import EfreshImg from "../assets/efish/eFresh.png";
 
 const Video = () => {
 	const opts = {
 		height: "220px",
 		width: "100%",
 		playerVars: {
-			// https://developers.google.com/youtube/player_parameters
 			autoplay: 1,
 		},
 	};
 
 	const _onReady = (event) => {
-		// access to player in all event handlers via event.target
 		event.target.pauseVideo();
 	};
 
@@ -22,32 +21,42 @@ const Video = () => {
 	}, []);
 
 	return (
-		<>
-			<div style={{ marginTop: "100px" }}>
-				<YouTube videoId="dvoNwa3369I" opts={opts} onReady={_onReady} />
+		<div className="video-wrapper">
+			<div className="efresh-image">
+				<img src={EfreshImg} alt="efresh" />
+			</div>
+			<div className="line"></div>
+			<div className="video-player">
+				<YouTube videoId="ZrzqFYAodWU" opts={opts} onReady={_onReady} />
 			</div>
 
 			<Container>
 				<div className="video-section-content">
 					<div className="title-content">
-						<h1>Camaronera Cachugran,</h1>
-						<h3>Taking steps into the future.</h3>
+						<h1>Mualim</h1>
+						<h3>
+							is a small scale farmer that started his first pond
+							in 2017 with traditional practice.
+						</h3>
 					</div>
 					<div className="description-content">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Maxime mollitia, molestiae quas vel sint commodi
-						repudiandae consequuntur voluptatum laborum numquam
-						blanditiis harum quisquam eius sed odit fugiat iusto
-						fuga praesentium optio, eaque rerum! Provident similique
-						accusantium nemo autem. Veritatis obcaecati tenetur iure
-						eius earum ut molestias architecto voluptate aliquam
-						nihil, eveniet aliquid culpa officia aut! Impedit sit
-						sunt quaerat, odit, tenetur error, harum nesciunt ipsum
-						debitis quas aliquid. Reprehenderit, quia.
+						Mualim is a small scale farmer who started his first
+						pond in 2017 with traditional practice. Right now, he’s
+						managing 6 ponds and implementing technology to increase
+						his productivity. Shrimp farm is his main source of
+						income. He works day and night, carefully taking care of
+						the shrimp to ensure the harvest is successful, in a
+						good quality, so his wife and kids can have a good
+						livelihood.
+						<div style={{ marginTop: "20px" }}>
+							With you consuming the shrimp from smallholder
+							farmers, you help to support his family and
+							community to foster.
+						</div>
 					</div>
 				</div>
 			</Container>
-		</>
+		</div>
 	);
 };
 
