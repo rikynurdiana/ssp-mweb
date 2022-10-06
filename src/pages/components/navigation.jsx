@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import LogoEfishery from "../../assets/logo-efish.png";
 import { useNavigate } from "react-router-dom";
+import { HouseDoor } from "react-bootstrap-icons";
+import "./styles.scss";
 
 const Navigation = () => {
 	const navigate = useNavigate();
@@ -21,7 +23,9 @@ const Navigation = () => {
 				<Navbar.Toggle
 					aria-controls="basic-navbar-nav"
 					onClick={() => handleBackToHome()}
-				/>
+				>
+					<HouseDoor color="#b3b3b3" size={40} />
+				</Navbar.Toggle>
 			</Container>
 		</Navbar>
 	);
