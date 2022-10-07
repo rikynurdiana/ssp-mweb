@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import LogoEfishery from "../../assets/logo-efish.png";
 import { useNavigate } from "react-router-dom";
 // import { HouseDoor } from "react-bootstrap-icons";
-import HomeIcon from "../../assets/efish/House-Outline.png";
+import HomeIcon from "../../assets/efish/House-Outline.svg";
 import "./styles.scss";
 
 const Navigation = () => {
@@ -26,7 +26,12 @@ const Navigation = () => {
 					onClick={() => handleBackToHome()}
 				>
 					{/* <HouseDoor color="#b3b3b3" size={40} /> */}
-					<img src={HomeIcon} alt="house" width={40} />
+					<img
+						src={HomeIcon}
+						alt="house"
+						width={50}
+						style={{ marginRight: "-15px" }}
+					/>
 				</Navbar.Toggle>
 			</Container>
 		</Navbar>
