@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import DataLine from "./components/dataLine";
-import LocationImg from "../assets/efish/location.png";
+import LocationImg from "../assets/efish/location.svg";
 
 const Locations = () => {
 	useEffect(() => {
