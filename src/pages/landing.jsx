@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Modal from "react-bootstrap/Modal";
 
 import PackingImg from "../assets/efish/packaging-bg.png";
-import BoxPacket from "../assets/efish/eFresh-Shrimp-Packaging.svg";
+import BoxPacket from "../assets/efish/eFresh-Shrimp-Packaging.png";
 import ScanBtn from "../assets/efish/scan-button.svg";
 
 const Landing = () => {
