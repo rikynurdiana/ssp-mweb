@@ -8,7 +8,7 @@ import DataLine from "./components/dataLine";
 
 import ImagesRound from "../assets/efish/images-round.png";
 import EfreshImg from "../assets/efish/eFresh.svg";
-import ShrimpImg from "../assets/efish/udang.svg";
+import ShrimpImg from "../assets/efish/udang.png";
 
 const Detail = () => {
 	useEffect(() => {
@@ -38,7 +38,7 @@ const Detail = () => {
 					<Row>
 						<Col xs={6} sm={6} md={6}>
 							<div className="img-wrapper">
-								<img src={ShrimpImg} alt="image" width="100%" />
+								<img src={ShrimpImg} alt="image" />
 							</div>
 						</Col>
 						<Col xs={6} sm={6} md={6}>
