@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Modal from "react-bootstrap/Modal";
 
 import PackingImg from "../assets/efish/packaging-bg.png";
-import BoxPacket from "../assets/efish/eFresh-Shrimp-Packaging.png";
+import BoxPacket from "../assets/efish/box-shrimp.png";
 import ScanBtn from "../assets/efish/scan-button.svg";
 
 const Landing = () => {
@@ -46,11 +46,6 @@ const Landing = () => {
 		<Container>
 			<div className="section-content">
 				<div className="image-content">
-					<img
-						src={PackingImg}
-						alt="packing-images"
-						className="bg-package"
-					/>
 					<img
 						src={BoxPacket}
 						alt="package"

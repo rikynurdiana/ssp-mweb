@@ -3,8 +3,8 @@
 	margin-top: 100px;
 
 	.image-content {
-		margin-bottom: 20px;
 		margin-top: 20px;
+		margin-bottom: -40px;
 		position: relative;
 
 		.bg-package {
@@ -12,10 +12,6 @@
 		}
 
 		.box-package {
-			position: absolute;
-			left: 25px;
-			top: 10px;
-			width: 85%;
 		}
 	}
 

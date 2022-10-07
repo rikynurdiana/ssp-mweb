@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import LogoEfishery from "../../assets/logo-efish.png";
+import LogoEfishery from "../../assets/efishery-logo.svg";
 import { useNavigate } from "react-router-dom";
 // import { HouseDoor } from "react-bootstrap-icons";
 import HomeIcon from "../../assets/efish/House-Outline.svg";
@@ -19,7 +19,7 @@ const Navigation = () => {
 		<Navbar expand="lg" fixed="top" style={{ backgroundColor: "#ffffff" }}>
 			<Container>
 				<Navbar.Brand href="/">
-					<img src={LogoEfishery} alt="logo" width="50px" />
+					<img src={LogoEfishery} alt="logo" />
 				</Navbar.Brand>
 				<Navbar.Toggle
 					aria-controls="basic-navbar-nav"
