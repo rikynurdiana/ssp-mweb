@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 import DataLine from "./components/dataLine";
 
 import ImagesRound from "../assets/efish/images-round.png";
-import EfreshImg from "../assets/efish/eFresh.png";
+import EfreshImg from "../assets/efish/eFresh.svg";
 import ShrimpImg from "../assets/efish/udang.svg";
 
 const Detail = () => {

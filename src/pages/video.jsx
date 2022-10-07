@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import YouTube from "react-youtube";
 import Container from "react-bootstrap/Container";
-import EfreshImg from "../assets/efish/eFresh.png";
+import EfreshImg from "../assets/efish/eFresh.svg";
 
 const Video = () => {
 	const opts = {

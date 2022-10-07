@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import EfreshImg from "../assets/efish/eFresh.png";
+import EfreshImg from "../assets/efish/eFresh.svg";
 import FarmImage from "../assets/efish/images.png";
 
 const Farms = () => {
