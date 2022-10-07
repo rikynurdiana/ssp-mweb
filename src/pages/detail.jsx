@@ -38,7 +38,11 @@ const Detail = () => {
 					<Row>
 						<Col xs={6} sm={6} md={6}>
 							<div className="img-wrapper">
-								<img src={ShrimpImg} alt="image" />
+								<img
+									src={ShrimpImg}
+									alt="image"
+									className="img-responsive"
+								/>
 							</div>
 						</Col>
 						<Col xs={6} sm={6} md={6}>
